@@ -6,19 +6,38 @@
     <title>KalyaVentures LLC - NityaPOD & AmaraDigital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#8B9B6B',
+                        'brand-cream': '#F5E6D3',
+                        'brand-gold': '#D4B95E',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .bg-pattern {
+            background-color: #F5E6D3;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B9B6B' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-pattern">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
+    <nav class="bg-brand-green shadow-lg fixed w-full z-10">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-gray-800">KalyaVentures</span>
+                    <span class="text-2xl font-bold text-brand-cream">KalyaVentures</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
-                    <a href="#shops" class="text-gray-600 hover:text-gray-900">Our Shops</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                    <a href="#about" class="text-brand-cream hover:text-white transition-colors">About</a>
+                    <a href="#shops" class="text-brand-cream hover:text-white transition-colors">Our Shops</a>
+                    <a href="#contact" class="text-brand-cream hover:text-white transition-colors">Contact</a>
                 </div>
             </div>
         </div>
@@ -27,16 +46,16 @@
     <!-- Hero Section -->
     <section class="pt-24 pb-12 px-4">
         <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Welcome to KalyaVentures LLC</h1>
-            <p class="text-xl text-gray-600 mb-8">Your one-stop destination for unique print-on-demand and digital products</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-brand-green mb-6">Welcome to KalyaVentures LLC</h1>
+            <p class="text-xl text-brand-green/80 mb-8">Your one-stop destination for unique print-on-demand and digital products</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
+    <section id="about" class="py-16 bg-white/80 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">About Us</h2>
-            <div class="max-w-3xl mx-auto text-gray-600">
+            <h2 class="text-3xl font-bold text-brand-green mb-8 text-center">About Us</h2>
+            <div class="max-w-3xl mx-auto text-brand-green/80">
                 <p class="mb-6">
                     KalyaVentures LLC is a dynamic company operating two distinct businesses that bring creativity and quality to our customers worldwide.
                 </p>
@@ -48,19 +67,19 @@
     </section>
 
     <!-- Our Shops Section -->
-    <section id="shops" class="py-16 bg-gray-50">
+    <section id="shops" class="py-16 bg-brand-cream/50 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Our Shops</h2>
+            <h2 class="text-3xl font-bold text-brand-green mb-12 text-center">Our Shops</h2>
             
             <!-- NityaPOD -->
             <div class="mb-16">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">NityaPOD</h3>
-                <p class="text-gray-600 mb-8 text-center">Discover our unique print-on-demand products</p>
+                <h3 class="text-2xl font-bold text-brand-green mb-6 text-center">NityaPOD</h3>
+                <p class="text-brand-green/80 mb-8 text-center">Discover our unique print-on-demand products</p>
                 <div class="flex justify-center space-x-6">
-                    <a href="https://www.amazon.com/YourNityaPOD" target="_blank" class="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
+                    <a href="https://www.amazon.com/YourNityaPOD" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg hover:bg-brand-gold/80 transition-colors">
                         <i class="fab fa-amazon mr-2"></i> Amazon Store
                     </a>
-                    <a href="https://www.etsy.com/shop/YourNityaPOD" target="_blank" class="inline-flex items-center px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors">
+                    <a href="https://www.etsy.com/shop/YourNityaPOD" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-brand-green text-white rounded-lg hover:bg-brand-green/80 transition-colors">
                         <i class="fab fa-etsy mr-2"></i> Etsy Shop
                     </a>
                 </div>
@@ -68,13 +87,13 @@
 
             <!-- AmaraDigital -->
             <div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">AmaraDigital</h3>
-                <p class="text-gray-600 mb-8 text-center">Explore our collection of digital products</p>
+                <h3 class="text-2xl font-bold text-brand-green mb-6 text-center">AmaraDigital</h3>
+                <p class="text-brand-green/80 mb-8 text-center">Explore our collection of digital products</p>
                 <div class="flex justify-center space-x-6">
-                    <a href="https://www.amazon.com/YourAmaraDigital" target="_blank" class="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
+                    <a href="https://www.amazon.com/YourAmaraDigital" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg hover:bg-brand-gold/80 transition-colors">
                         <i class="fab fa-amazon mr-2"></i> Amazon Store
                     </a>
-                    <a href="https://www.etsy.com/shop/YourAmaraDigital" target="_blank" class="inline-flex items-center px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors">
+                    <a href="https://www.etsy.com/shop/YourAmaraDigital" target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3 bg-brand-green text-white rounded-lg hover:bg-brand-green/80 transition-colors">
                         <i class="fab fa-etsy mr-2"></i> Etsy Shop
                     </a>
                 </div>
@@ -83,12 +102,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white">
+    <section id="contact" class="py-16 bg-white/80 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Contact Us</h2>
+            <h2 class="text-3xl font-bold text-brand-green mb-8 text-center">Contact Us</h2>
             <div class="max-w-md mx-auto text-center">
-                <p class="text-gray-600 mb-4">Have questions? We'd love to hear from you!</p>
-                <a href="mailto:contact@kalyaventures.com" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                <p class="text-brand-green/80 mb-4">Have questions? We'd love to hear from you!</p>
+                <a href="mailto:contact@kalyaventures.com" class="inline-flex items-center px-6 py-3 bg-brand-gold text-white rounded-lg hover:bg-brand-gold/80 transition-colors">
                     <i class="fas fa-envelope mr-2"></i> contact@kalyaventures.com
                 </a>
             </div>
@@ -96,7 +115,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-brand-green text-brand-cream py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p>&copy; 2024 KalyaVentures LLC. All rights reserved.</p>
         </div>
